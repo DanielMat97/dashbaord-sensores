@@ -1,0 +1,16 @@
+<div class="w-100 h-100 dashboard-container">
+  <app-header></app-header>
+  <div class="cont-main d-flex">
+    <div class="cont-sidebar p-3">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="cont-menu p-3">
+      <div class="cont-time">
+        <app-time></app-time>
+      </div>
+      <div class="cont-links">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

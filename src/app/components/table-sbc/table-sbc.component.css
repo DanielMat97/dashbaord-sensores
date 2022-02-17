@@ -1,0 +1,11 @@
+h1 {
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.cont-table{
+  min-height: 300px;
+  max-height: 400px;
+  overflow: scroll;
+}

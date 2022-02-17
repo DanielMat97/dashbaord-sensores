@@ -1,0 +1,13 @@
+h1 {
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+p, small {
+    font-size: .7em;
+}
+
+small {
+    margin-top: -5px;
+}

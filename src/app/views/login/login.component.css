@@ -6,6 +6,7 @@ h1 {
   font-weight: bold;
   font-size: 1.2em;
   letter-spacing: 1px;
+  color: var(--color-1);
 }
 
 .btn-submit {

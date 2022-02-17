@@ -1,0 +1,51 @@
+<div class="container-fluid mb-3">
+  <div class="row">
+    <div class="col">
+      <h1>Datos:</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="cont-table">
+        <table
+          class="table table-responsive table-striped table-bordered table-hover table-sm"
+        >
+          <thead class="thead-success">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">MARCA</th>
+              <th scope="col">COD.</th>
+              <th scope="col">HUMEDAD</th>
+              <th scope="col">TEMP. Pm1</th>
+              <th scope="col">PM1MOV. pm25</th>
+              <th scope="col">Pm25MOV</th>
+              <th scope="col">LAT</th>
+              <th scope="col">LNG</th>
+              <th scope="col">AÑO</th>
+              <th scope="col">MES</th>
+              <th scope="col">DIA</th>
+              <th scope="col">HORA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]">
+              <th scope="row">101</th>
+              <td>BOSCH</td>
+              <td>19920</td>
+              <td>32%</td>
+              <td>21ºC</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>4.677405</td>
+              <td>-74.096811</td>
+              <td>2022</td>
+              <td>02</td>
+              <td>18</td>
+              <td>12:20:23 am</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

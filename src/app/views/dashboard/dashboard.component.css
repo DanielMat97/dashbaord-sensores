@@ -1,0 +1,30 @@
+.dashboard-container{
+  position: fixed;
+}
+
+.cont-main {
+  height: 94%;
+  width: 100%;
+}
+
+.cont-sidebar {
+  width: 20%;
+  height: 100%;
+  border-right: solid 1px #e0e0e0;
+}
+
+.cont-menu {
+    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.cont-time{
+  width: 100%;
+  height: 5%;
+}
+
+.cont-links{
+  width: 100%;
+  height: 95%;
+}
