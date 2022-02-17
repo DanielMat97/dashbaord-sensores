@@ -1,0 +1,23 @@
+.cont-form {
+  background: white;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.btn-submit {
+  color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  text-align: center;
+  width: 100%;
+}
