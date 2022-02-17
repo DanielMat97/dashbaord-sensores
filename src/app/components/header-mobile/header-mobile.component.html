@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/dashboard/home"
+      >Secretaria de Ambiente</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            routerLink="/dashboard/home"
+            routerLinkActive="active"
+            class="d-flex align-items-center mb-3"
+          >
+            <p class="m-0">INICIO</p>
+            <fa-icon class="mx-4" [icon]="faHome"></fa-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            routerLink="/dashboard/rmcab"
+            routerLinkActive="active"
+            class="d-flex align-items-center mb-3"
+          >
+            <p class="m-0">RMCAB</p>
+            <fa-icon class="mx-4" [icon]="faLungs"></fa-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            routerLink="/dashboard/sbc"
+            routerLinkActive="active"
+            class="d-flex align-items-center mb-3"
+          >
+            <p class="m-0">SENSORES BAJO COSTO</p>
+            <fa-icon class="mx-4" [icon]="faSatellite"></fa-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            routerLink="/dashboard/geo"
+            routerLinkActive="active"
+            class="d-flex align-items-center mb-3"
+          >
+            <p class="m-0">GEO SERVICIOS</p>
+            <fa-icon class="mx-4" [icon]="faLocation"></fa-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            routerLink="/dashboard/noise"
+            routerLinkActive="active"
+            class="d-flex align-items-center mb-3"
+          >
+            <p class="m-0">RED DE RUIDO</p>
+            <fa-icon class="mx-4" [icon]="faBullhorn"></fa-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            routerLink="/login"
+            routerLinkActive="active"
+            class="d-flex align-items-center mb-3"
+          >
+            <p class="m-0">Cerrar Sesión</p>
+            <fa-icon class="mx-4" [icon]="faRightFromBracket"></fa-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

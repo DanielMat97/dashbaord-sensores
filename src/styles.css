@@ -1,5 +1,11 @@
 :root{
   --color-1: #047f04;
+  --xs: 0,
+  --sm: 576px,
+  --md: 768px,
+  --lg: 992px,
+  --xl: 1200px,
+  --xxl: 1400px
 }
 
 * {
@@ -12,3 +18,33 @@ body {
   height: 100%;
   background: whitesmoke;
 }
+
+/*
+
+responsive css
+
+@media (max-width: 576px) {
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+
+}
+
+@media (min-width: 1401px) {
+
+}
+
+*/

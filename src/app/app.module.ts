@@ -18,6 +18,7 @@ import { MenuSbcComponent } from './components/menu-sbc/menu-sbc.component';
 import { TableSbcComponent } from './components/table-sbc/table-sbc.component';
 import { GeoReferenceSbcComponent } from './components/geo-reference-sbc/geo-reference-sbc.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HeaderMobileComponent } from './components/header-mobile/header-mobile.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MenuSbcComponent,
     TableSbcComponent,
     GeoReferenceSbcComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderMobileComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-.dashboard-container{
+.dashboard-container {
   position: fixed;
 }
 
@@ -14,17 +14,64 @@
 }
 
 .cont-menu {
-    width: 80%;
-    height: 100%;
-    overflow-y: scroll;
+  width: 80%;
+  height: 100%;
+  overflow-y: scroll;
 }
 
-.cont-time{
+.cont-time {
   width: 100%;
   height: 5%;
 }
 
-.cont-links{
+.cont-links {
   width: 100%;
   height: 95%;
+}
+
+.cont-header-mobile{
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .cont-main {
+    height: 92%;
+    width: 100%;
+  }
+  .cont-sidebar {
+    display: none;
+  }
+  .cont-menu {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .cont-time {
+    width: 100%;
+    height: 6%;
+  }
+  .cont-header-mobile{
+    display: initial;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .cont-main {
+    width: 100%;
+  }
+  .cont-sidebar {
+    display: none;
+  }
+  .cont-menu {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .cont-time {
+    width: 100%;
+    height: 6%;
+  }
+  .cont-header-mobile{
+    display: initial;
+  }
 }
