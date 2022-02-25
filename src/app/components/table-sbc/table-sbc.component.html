@@ -13,35 +13,35 @@
           <thead class="thead-success">
             <tr>
               <th scope="col">ID</th>
+              <th scope="col">ESTACIÓN</th>
               <th scope="col">MARCA</th>
               <th scope="col">COD.</th>
               <th scope="col">HUMEDAD</th>
-              <th scope="col">TEMP. Pm1</th>
-              <th scope="col">PM1MOV. pm25</th>
-              <th scope="col">Pm25MOV</th>
+              <th scope="col">TEMP.</th>
+              <th scope="col">Pm1</th>
+              <th scope="col">Pm10</th>
+              <th scope="col">Pm25</th>
               <th scope="col">LAT</th>
               <th scope="col">LNG</th>
-              <th scope="col">AÑO</th>
-              <th scope="col">MES</th>
-              <th scope="col">DIA</th>
               <th scope="col">HORA</th>
+              <th scope="col">FECHA</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]">
-              <th scope="row">101</th>
-              <td>BOSCH</td>
-              <td>19920</td>
-              <td>32%</td>
-              <td>21ºC</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>4.677405</td>
-              <td>-74.096811</td>
-              <td>2022</td>
-              <td>02</td>
-              <td>18</td>
-              <td>12:20:23 am</td>
+            <tr *ngFor="let sensor of data.results; index as i">
+              <th scope="row">{{ i + 1 }}</th>
+              <td>{{ sensor.estacion.estacion_nombre }}</td>
+              <td>{{ sensor.sensor_marca }}</td>
+              <td>{{ sensor.sensor_codigo }}</td>
+              <td>{{ sensor.hum_s | number: "1.2-2" }} %</td>
+              <td>{{ sensor.tmp_s | number: "1.2-2" }} ºC</td>
+              <td>{{ sensor.pm1 | number: "1.2-2" }}</td>
+              <td>{{ sensor.pm10 | number: "1.2-2" }}</td>
+              <td>{{ sensor.pm25 | number: "1.2-2" }}</td>
+              <td>{{ sensor.estacion.latitud }}</td>
+              <td>{{ sensor.estacion.longitud }}</td>
+              <td>{{ sensor.medicion_fecha | date: "shortTime" }}</td>
+              <td>{{ sensor.medicion_fecha | date: "longDate" }}</td>
             </tr>
           </tbody>
         </table>

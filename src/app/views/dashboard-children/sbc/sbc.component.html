@@ -1,4 +1,6 @@
 <app-menu-sbc></app-menu-sbc>
-<app-table-sbc></app-table-sbc>
-<app-geo-reference-sbc></app-geo-reference-sbc>
+<app-table-sbc [data]="sensorsData.data"></app-table-sbc>
+<div class="w-100 d-flex justify-content-center">
+  <app-paginator></app-paginator>
+</div>
 <app-footer></app-footer>

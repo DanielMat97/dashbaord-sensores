@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { DataSensors } from 'src/app/models/sensors/sensors.module';
 
 @Component({
   selector: 'app-table-sbc',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table-sbc.component.css']
 })
 export class TableSbcComponent implements OnInit {
+  @Input() data: DataSensors = {
+    count: 0,
+    next: '',
+    previous: '',
+    results: []
+  };
 
   constructor() { }
 

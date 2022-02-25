@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { TableSbcComponent } from './components/table-sbc/table-sbc.component';
 import { GeoReferenceSbcComponent } from './components/geo-reference-sbc/geo-reference-sbc.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderMobileComponent } from './components/header-mobile/header-mobile.component';
+import { PaginatorComponent } from './components/paginator/paginator.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +39,14 @@ import { HeaderMobileComponent } from './components/header-mobile/header-mobile.
     TableSbcComponent,
     GeoReferenceSbcComponent,
     FooterComponent,
-    HeaderMobileComponent
+    HeaderMobileComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
